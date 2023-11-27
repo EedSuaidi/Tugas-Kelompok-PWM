@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Nunito;
+    background-color: #F9F9FF;
+}
+
+/* Navigation Section */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 2;
+    font-size: large;
+    color: #2a2a2a;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+nav > a {
+    display: flex;
+    justify-content: center;
+    color: #f42f2c;
+    font-weight: bold;
+    text-decoration: none;
+    flex: 2;
+}
+
+nav > ul {
+    display: flex;
+    gap: 3rem;
+    flex: 3;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    color: #2a2a2a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav > ul > li > a:hover {
+    color: #f42f2c;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    height: 650px;
+    margin-top: 70px;
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    color: white;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 100px;
+}
+
+.hero-text > h2 {
+    font-size: 50px;
+}
+
+.hero-button {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    font-family: Nunito;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    background-color: #f42f2c;
+    border-radius: 25px;
+    border: 2px solid #f42f2c;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+    background-color: white;
+    color: #f42f2c;
+    border-color: #f42f2c;
+    cursor: pointer;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* About Section */
+
+.about {
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.about-text {
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.about-text > h2 {
+    margin: 0 0 20px 0;
+    font-family: Montserrat;
+    font-size: 35px;
+    color: #f42f2c;
+}
+
+.about-image {
+    max-width: 35%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.about-image > img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.25);
+}
+
+/* Menu Section */
+
+.menu {
+    padding: 100px 0 75px 0;
+}
+
+.menu > h2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #f42f2c;
+    text-align: center;
+    margin: 0 0 75px 0;
+}
+
+.row-menu {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-menu {
+    width: 320px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card-menu:hover {
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
+    translate: 0 20px;
+}
+
+.card-menu:hover .card-text > h4 {
+    color: #f42f2c;
+}
+
+.card-menu:hover img {
+    scale: 1.1;
+}
+
+.card-img {
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.card-img > img {
+    width: 320px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card-text > h4 {
+    margin: 10px 0 10px 15px;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.card-text > p {
+    margin: 0 15px 0 15px;
+    text-align: justify;
+}
+
+/* Contact Section */
+
+.contact {
+    background-color: white;
+    padding: 100px 0 100px 0;
+}
+
+.contact > h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #f42f2c;
+    margin: 0 0 75px 0;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 40%;
+}
+
+form > .input {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+form > .input > label {
+    font-weight: bold;
+}
+
+form > .input > input, textarea {
+    display: block;
+    width: 100%;
+    margin: 5px 0 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Nunito;
+    transition: 0.3s;
+}
+
+form > .input > input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #f42f2c;
+    box-shadow: 0 0 0 4px rgba(244, 47, 44, 0.15);
+}
+
+form > button {
+    margin: 12px 0;
+    padding: 10px 14px;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #f42f2c;
+    color: white;
+    border: 1px solid #f42f2c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form > button:hover {
+    background-color: white;
+    color: #f42f2c;
+    border-color: #f42f2c;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 100px 0 100px 0;
+    background-color: #f42f2c;
+    color: white;
+}
+
+.row-footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer-widget {
+    width: 320px;
+}
+
+.footer-widget > h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-widget:first-child li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-widget:nth-child(2) > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer-widget:nth-child(2) li {
+    margin-top: 10px;
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.footer-widget:nth-child(2) li:hover {
+    background-color: white;
+}
+
+.footer-widget:nth-child(2) li:hover i {
+    color: #f42f2c;
+}
+
+.footer-widget:nth-child(2) a {
+    text-decoration: none;
+}
+
+.footer-widget:nth-child(2) i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.address-description {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
