@@ -77,7 +77,7 @@ nav > ul > li > a:hover {
     display: flex;
     height: 650px;
     margin-top: 70px;
-    background-image: url('img/hero.jpg');
+    background-image: url('img/hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Montserrat;
@@ -150,6 +150,7 @@ nav > ul > li > a:hover {
 .about-image > img {
     width: 400px;
     height: 300px;
+    aspect-ratio: 4/3;
     border-radius: 20px;
     box-shadow: 0px 0px 50px rgba(0,0,0,0.25);
 }
@@ -205,7 +206,8 @@ nav > ul > li > a:hover {
 
 .card-img > img {
     width: 320px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 16/9;
     transition: 0.3s;
 }
 
@@ -410,6 +412,12 @@ textarea {
         flex-basis: calc(33.33% - 10px);
     }
 
+    /* Contact Section */
+
+    form {
+        width: 60%;
+    }
+
     /* Footer Section */
 
     .row-footer {
@@ -472,26 +480,35 @@ textarea {
 
     .about-image {
         width: auto;
-        margin: 0 30px;
+        margin: 0 100px;
+    }
+
+    .about-image > img {
+        width: 320px;
     }
 
     /* Menu Section */
 
     .row-menu {
         margin: 0;
+        padding: 0 20px;
         flex-direction: column;
         justify-content: center;
     }
 
     .card-menu {
         width: auto;
-        margin: 0 35px;
+        margin: 0 20px;
+    }
+
+    .card-img > img {
+        width: 100%;
     }
 
     /* Contact Section */
 
     form {
-        width: auto;
+        width: 80%;
     }
 
     /* Footer Section */
