@@ -33,6 +33,7 @@ nav {
 nav > a {
     display: flex;
     justify-content: center;
+    font-family: Montserrat;
     color: #f42f2c;
     font-weight: bold;
     text-decoration: none;
@@ -56,6 +57,18 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     color: #f42f2c;
+}
+
+.active {
+    color: #f42f2c;
+}
+
+.show {
+    right: 0;
+}
+
+.nav-toggle {
+    display: none;
 }
 
 /* Hero Section */
@@ -107,15 +120,15 @@ nav > ul > li > a:hover {
 .about {
     padding: 100px 0 100px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
     background-color: white;
 }
 
 .about-text {
-    max-width: 35%;
+    width: 475px;
     display: flex;
     flex-direction: column;
-    flex: 1;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -129,14 +142,14 @@ nav > ul > li > a:hover {
 }
 
 .about-image {
-    max-width: 35%;
+    width: 475px;
     display: flex;
-    flex: 1;
     justify-content: center;
 }
 
 .about-image > img {
-    width: 350px;
+    width: 400px;
+    height: 300px;
     border-radius: 20px;
     box-shadow: 0px 0px 50px rgba(0,0,0,0.25);
 }
@@ -156,9 +169,10 @@ nav > ul > li > a:hover {
 }
 
 .row-menu {
-    margin-bottom: 50px;
+    margin: 0 50px 50px 50px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -283,16 +297,16 @@ textarea {
 
 /* Footer Section */
 
-footer {
-    padding: 100px 0 100px 0;
-    background-color: #f42f2c;
-    color: white;
-}
-
 .row-footer {
     display: flex;
     justify-content: center;
     gap: 100px;
+}
+
+.row-footer:first-child {
+    padding: 100px 0 100px 0;
+    background-color: #f42f2c;
+    color: white;
 }
 
 .footer-widget {
@@ -354,4 +368,153 @@ footer {
     display: flex;
     gap: 15px;
 }
+
+.row-footer:nth-child(2) {
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+}
+
+.row-footer:nth-child(2) span {
+    color: #f42f2c;
+}
+
+/* TABLET SCREEN */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* About Section */
+
+    .about {
+        gap: 50px;
+    }
+
+    .about-text {
+        width: auto;
+        margin: 0 0 0 30px;
+    }
+
+    .about-image {
+        width: auto;
+        margin: 0 30px 0 0;
+    }
+
+    /* Menu Section */
+
+    .row-menu {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .card-menu {
+        flex-basis: calc(33.33% - 10px);
+    }
+
+    /* Footer Section */
+
+    .row-footer {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* PHONE SCREEN */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation Section */
+
+    nav a {
+        justify-content: start;
+    }
+    
+    nav > ul {
+        flex-direction: column;
+        justify-content: start;
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: #222;
+        transition: 0.5s;
+    }
+
+    nav > ul > li > a {
+        color: white;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Hero Section */
+
+    .hero-text {
+        margin: 0 30px;
+        text-align: center;
+    }
+
+    /* About Section */
+
+    .about {
+        margin: 0 !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .about-text {
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .about-image {
+        width: auto;
+        margin: 0 30px;
+    }
+
+    /* Menu Section */
+
+    .row-menu {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-menu {
+        width: auto;
+        margin: 0 35px;
+    }
+
+    /* Contact Section */
+
+    form {
+        width: auto;
+    }
+
+    /* Footer Section */
+
+    .row-footer {
+        flex-direction: column;
+    }
+
+    .footer-widget {
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .row-footer:nth-child(2) {
+        text-align: center;
+    }
+
+    .row-footer:nth-child(2) > p {
+        margin: 0 30px;
+    }
+
+}
+
+
+
 

@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header id="home">
+    <header class="home" id="home">
       <nav>
         <a href="#">Bakpia Pathok 69</a>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
       <div class="hero">
         <div class="hero-text">
@@ -30,7 +34,7 @@
       <section class="about" id="about">
         <div class="about-text">
           <h2>About</h2>
-          <p>
+          <p class="about-description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
             explicabo impedit iste cumque nulla cupiditate animi eum voluptas
             quia, exercitationem eligendi corporis iure fuga quasi sequi eveniet
@@ -93,8 +97,6 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="row-menu">
             <div class="card-menu">
               <div class="card-img">
                 <img src="assets/img/about.jpg" alt="" />
@@ -160,7 +162,9 @@
               <label for="input-message">Message</label>
               <textarea id="input-message" cols="30" rows="10"></textarea>
             </div>
-            <button id="bookSubmit" type="submit">Submit</button>
+            <button class="button-submit" id="bookSubmit" type="submit">
+              Submit
+            </button>
           </form>
         </div>
       </section>
@@ -214,13 +218,22 @@
             </div>
           </div>
         </div>
+        <div class="row-footer">
+          <p>
+            Copyright © 2023 All rights reserved | Made with
+            <span><i class="fa-regular fa-heart"></i></span>
+            by
+            <span> Kelompok 2</span>
+          </p>
+        </div>
       </div>
     </footer>
 
-    <script src="assets/script.js"></script>
     <script
       src="https://kit.fontawesome.com/85e288bdd3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
