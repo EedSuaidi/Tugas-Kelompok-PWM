@@ -208,10 +208,12 @@ nav > ul > li > a:hover {
     width: 320px;
     border-radius: 20px 20px 0 0;
     aspect-ratio: 16/9;
+    object-fit: cover;
     transition: 0.3s;
 }
 
 .card-text > h4 {
+    font-family: Montserrat;
     margin: 10px 0 10px 15px;
     text-align: center;
     font-size: 20px;
@@ -220,7 +222,28 @@ nav > ul > li > a:hover {
 
 .card-text > p {
     margin: 0 15px 0 15px;
+    color: #4b5563;
     text-align: justify;
+}
+
+.card-price {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-price > p {
+    padding: 3px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #f42f2c;
+    font-family: Montserrat;
+    color: white;
 }
 
 /* Contact Section */
@@ -484,7 +507,8 @@ textarea {
     }
 
     .about-image > img {
-        width: 320px;
+        max-width: 320px;
+        max-height: 240px;
     }
 
     /* Menu Section */
@@ -528,6 +552,10 @@ textarea {
 
     .row-footer:nth-child(2) > p {
         margin: 0 30px;
+    }
+
+    .footer-widget > iframe {
+        width: 100%;
     }
 
 }
