@@ -119,10 +119,15 @@ nav > ul > li > a:hover {
 
 .about {
     padding: 100px 0 100px 0;
+    background-color: white;
+
+}
+
+.about-container {
+    padding: 0 0 100px 0;
     display: flex;
     justify-content: center;
     gap: 100px;
-    background-color: white;
 }
 
 .about-text {
@@ -152,7 +157,11 @@ nav > ul > li > a:hover {
     height: 300px;
     aspect-ratio: 4/3;
     border-radius: 20px;
-    box-shadow: 0px 0px 50px rgba(0,0,0,0.25);
+}
+
+.about-video {
+    display: flex;
+    justify-content: center;
 }
 
 /* Menu Section */
@@ -193,10 +202,6 @@ nav > ul > li > a:hover {
 
 .card-menu:hover .card-text > h4 {
     color: #f42f2c;
-}
-
-.card-menu:hover .card-img {
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
 }
 
 .card-menu:hover img {
@@ -414,7 +419,7 @@ textarea {
 
     /* About Section */
 
-    .about {
+    .about-container {
         gap: 50px;
     }
 
@@ -493,7 +498,7 @@ textarea {
 
     /* About Section */
 
-    .about {
+    .about-container {
         margin: 0 !important;
         flex-direction: column;
         justify-content: center;
@@ -513,6 +518,11 @@ textarea {
     .about-image > img {
         max-width: 320px;
         max-height: 240px;
+    }
+
+    .about-video > iframe {
+        width: 320px;
+        height: 180px;
     }
 
     /* Menu Section */

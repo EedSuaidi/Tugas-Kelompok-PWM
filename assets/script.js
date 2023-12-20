@@ -41,6 +41,7 @@ sr.reveal('.hero-button',{delay: 200});
 // Scroll About
 sr.reveal('.about-description',{}); 
 sr.reveal('.about-image',{delay: 400}); 
+sr.reveal('.about-video',{delay: 600}); 
 
 // Scroll Menu
 sr.reveal('.card-menu',{interval: 200}); 
